@@ -1,0 +1,644 @@
+$widthSite: 1140px;
+$colorSelectSite: #F16D7F;
+
+@mixin button_setting {
+  cursor: pointer;
+  position: absolute;
+
+  width: auto;
+  margin-top: -350px;
+  padding: 16px;
+  color: rgb(168, 166, 166);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+
+  user-select: none;
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+.center {
+  padding-left: calc(50% - $widthSite / 2);
+  padding-right: calc(50% - $widthSite / 2);
+}
+
+.meny {
+
+  background: rgba(34, 34, 34, 1);
+  height: 50px;
+  position: center;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 10% 10px 10%;
+  align-items: center;
+  z-index: 1000;
+
+  &_left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &_right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+.dropdown-btn {
+  background-color: rgba(34, 34, 34, 1);
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+
+.dropdown-content {
+
+  display: none;
+  position: absolute;
+  top: calc(6% + 10px);
+  background-color: #ffffff;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-content a {
+  color: rgba(111, 110, 110, 1);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #d4d4d4;
+}
+
+/* Показ меню при добавлении класса show */
+.dropdown-content.show {
+  display: block;
+
+}
+
+.kategori_nav {
+  color: rgba(241, 109, 127, 1);
+  padding: 5px 32px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.title_nav {
+  padding-left: 32px;
+  padding-bottom: 10px;
+}
+
+/* MEny------------------------------------------------------------------------- */
+
+.top-head {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: #F8F3F4;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+
+  &_heading {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.8px;
+    color: $colorSelectSite;
+
+  }
+}
+
+.bredcrumbs_link {
+
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 16.8px;
+
+}
+
+.bredcrumbs_link_site {
+  color: $colorSelectSite;
+}
+
+
+/* Slideshow container */
+
+.slideshow-container {
+  border: 1px solid #EAEAEA;
+  background-color: #F7F7F7;
+  height: 780px;
+  position: relative;
+}
+
+/* Hide the images by default */
+
+.mySlides {
+  display: flex;
+  justify-content: center;
+  height: 700px;
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev {
+  left: 0;
+  border-radius: 0 3px 3px 0;
+  @include button_setting;
+}
+
+/* Position the "next button" to the right */
+.next {
+  @include button_setting;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: $colorSelectSite;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+.info {
+  position: relative;
+  margin-top: -80px;
+
+  background: rgb(255, 255, 255);
+  background-clip: content-box;
+
+
+
+
+  &_block {
+    border: 1px solid #EAEAEA;
+    height: 600px;
+
+
+
+
+
+    &_headInfo {
+      padding-top: 64px;
+      color: $colorSelectSite;
+      font-size: 14px;
+      text-align: center;
+      padding-bottom: 15px;
+    }
+
+    &_line {
+      border: 2px solid $colorSelectSite;
+      width: 63px;
+      margin: auto;
+    }
+
+    &_headInfo2 {
+      padding-top: 15px;
+      font-size: 18px;
+      text-align: center;
+    }
+
+    &_headInfo3 {
+      margin: auto;
+      max-width: 555px;
+      padding-top: 50px;
+      font-size: 14px;
+      text-align: center;
+      color: #5E5E5E;
+    }
+
+    &_headPrice {
+      padding-top: 32px;
+      padding-bottom: 65px;
+      text-align: center;
+      color: $colorSelectSite;
+      font-size: 24px;
+
+    }
+
+    &_searchSpecial {
+      padding-top: 50px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding-bottom: 40px;
+
+      &_button {
+        border: none;
+        background-color: white;
+      }
+    }
+
+    &_shopButton {
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-content: center;
+      justify-content: space-evenly;
+
+      border: solid 1px $colorSelectSite;
+      width: 200px;
+      height: 50px;
+      text-align: center;
+      transition: 0.5s;
+    }
+
+    &_shopButton:hover {
+      background-color: $colorSelectSite;
+    }
+  }
+}
+///////////////////////////////////////////
+.cart-box {
+  padding-top: 130px;
+  padding-bottom: 130px;
+
+  max-width: $widthSite;
+   margin: 0 auto;
+   display: flex;
+   flex-wrap: wrap;
+   grid-template-rows: auto auto;
+   grid-template-columns: repeat(3, 1fr);
+   /* Три колонки равной ширины */
+   gap: 20px;
+   justify-content: center;
+
+   object-fit: contain;
+}
+.bodyContent {
+  display: flex;
+  align-content: space-between;
+  flex-wrap: wrap;
+  overflow: hidden;
+  width: 250px;
+
+  position: relative;
+  /* Добавлено для позиционирования кнопки */
+}
+.image_container {
+  height: 360px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.item__content{
+  padding: 10px;
+  background-color: #F8F8F8;
+  margin-top: -3px;
+  position: relative;
+  &_text {
+    padding-top: 20px;
+  
+  }
+  &_text2 {
+    padding-top: 30px;
+    color: #5D5D5D;
+  }
+&_price{
+  padding-left: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  color: $colorSelectSite;
+}  
+}
+
+
+
+.add-cart {
+  padding: 64px;
+}
+.item {
+  padding-top: 2px;
+  height: 360px;
+  width: 650px;
+  box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+  display: flex;
+  overflow: hidden;
+}
+
+
+.img___sale {
+  object-fit: cover;
+  max-height: 100%;
+}
+
+
+
+.overley {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 77%;
+  background-color: rgba(0, 0, 0, 0.5);
+  
+  /* Полупрозрачный черный цвет */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.overley:hover {
+  opacity: 1;
+}
+
+
+
+.imgPay {
+
+
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  object-position: center;
+
+  width: 1200px;
+  margin: auto;
+
+}
+
+.item_content {
+  padding-left: 22px;
+  padding-top: 20px;
+  background-color: white;
+}
+
+.item_heading {
+  width: 262px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: black;
+  margin-bottom: 42px;
+}
+
+.item_text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #575757;
+  margin-bottom: 6px;
+}
+
+.item_input {
+  width: 44px;
+  height: 24.95px;
+  border: 1px solid #EAEAEA;
+  text-align: center;
+  padding-left: 8px;
+  box-sizing: border-box;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 22px;
+  color: #656565;
+  margin-left: 24px;
+}
+
+.item_prColor {
+  color: #F16D7F;
+}
+
+.buttonRem {
+  width: 44px;
+  height: 44px;
+  background-color: white;
+  border: #EAEAEA;
+  font-size: 20px;
+  padding: 10px 20px;
+}
+
+/* Стили для кнопки */
+.button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  padding: 10px 20px;
+  background-color: #57575700;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+ 
+.bodyContent:hover .button {
+  display: block;
+}
+//////////////////////////////////////////////
+
+
+
+
+// footer
+.background {
+  background: linear-gradient(rgba(170, 170, 170, 0.5), rgba(255, 255, 255, 0.808)), url(../img/bot/4.2.png);
+  /* background-image: url(../img/bot/4.2.png) ; */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+
+  justify-content: space-around;
+  font-family: Arial, sans-serif;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  &_komment img {
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    max-width: 100px;
+  }
+
+  &_komment {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    padding-bottom: 50px;
+
+    &_p {
+      margin: auto;
+      padding-top: 20px;
+      max-width: 300px;
+      text-align: center;
+      font-size: 16px;
+    }
+  }
+
+
+}
+
+
+
+.subscribe {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+
+  &_email {
+    position: relative;
+
+    &_input {
+      border: none;
+      max-width: 250px;
+      height: 30px;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+
+  }
+
+  &_button {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fc7f7f;
+    color: white;
+    /* letter-spacing: 2px; */
+    cursor: pointer;
+
+  }
+  &_button:hover {
+    transition: .3s;
+    background-color: #ac5b5b;
+  }
+
+}
+
+.messenger {
+  padding: 15px 20px 15px 20px;
+  background: black;
+  color: white;
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+}
+.text_messenger{
+  padding-top: 10px;
+}
+
+.ico svg {
+  padding: 10px;
+  background: white;
+  transition: background-color 0.3s ease;
+}
+
+svg:hover{
+  background-color: rgba(241, 109, 127, 1);
+
+}
+
+////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+// img {
+//   max-width: 100%;
+//   height: auto;
+// }
+
+// .acception {
+//   font-size: 25px;
+// }
+
+
+
+// .messenger {
+//   padding: 30px 20px 30px 20px;
+//   background: black;
+//   color: white;
+//   display: flex;
+//   align-content: center;
+//   justify-content: space-around;
+// }
+
+// .text_messenger {
+//   padding-top: 10px;
+// }
+
+// svg {
+//   padding: 10px;
+//   background: white;
+//   transition: background-color 0.3s ease;
+// }
+
+// svg:hover {
+//   background-color: rgba(241, 109, 127, 1);
+
+// }

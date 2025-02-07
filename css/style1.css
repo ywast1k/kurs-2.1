@@ -1,0 +1,526 @@
+/* Сброс стилей по умолчанию */
+* {
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box; */
+    
+}
+
+/* meny ----------------------------------------------------------------- */
+.meny_top {
+  
+    background: rgba(34, 34, 34, 1);
+    height: 50px;
+    position: center;
+   /* width: 100%;  */
+    display: flex;
+    justify-content: space-around;
+ padding: 10px 10% 10px 10%;
+    align-items: center;
+
+    z-index: 1000;
+}
+
+.left_top {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.right_top {
+    
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Стили для кнопки */
+.dropdown-btn {
+    background-color: rgba(34, 34, 34, 1);
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.dropdown-content {
+
+    display: none;
+    position: absolute;
+    top: calc(6% + 10px);
+    background-color: #ffffff;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-content a {
+    color: rgba(111, 110, 110, 1);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #d4d4d4;
+}
+
+/* Показ меню при добавлении класса show */
+.dropdown-content.show {
+    display: block;
+
+}
+
+.kategori_nav {
+    color: rgba(241, 109, 127, 1);
+    padding: 5px 32px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.title_nav {
+    padding-left: 32px;
+    padding-bottom: 10px;
+}
+
+/* MEny------------------------------------------------------------------------- */
+
+/* 1 контент */
+
+.header {
+    
+    padding-top: 75px;
+    display: flex;
+    background: rgba(241, 228, 230, 1);
+    justify-content: center;
+
+
+}
+
+.img_head {
+    height: 100%;
+    border: 1px solid #ccc;
+
+}
+
+
+.text_title {
+    margin: auto;
+    justify-content: center;
+    display: inline;
+
+    /* height: 60px; */
+}
+
+.Title {
+    border-left: 5px solid #fc7f7f;
+    padding-left: 10px;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    font-family: Arial, sans-serif;
+
+
+}
+
+span {
+    color: rgba(241, 109, 127, 1);
+
+}
+
+/* offer */
+
+.promo-container {
+    margin: 0 auto;
+    display: grid;
+    
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    gap: 20px;
+    padding: 20px;
+    height: 350px;
+    margin-bottom: 30px;
+}
+
+/* Общие стили для секций */
+.section {
+    position: relative;
+    overflow: hidden;
+
+}
+
+.section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background: rgba(33, 22, 22, 0.7);
+
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+
+
+}
+
+/* Стили для разных секций */
+.women {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.men {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.kids {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+.accessories {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+}
+.browse-button_div{
+display: flex;
+justify-content: center;
+padding: 20px;
+}
+.browse-button{
+    padding: 10px 10px;
+    font-size: 16px;
+    color: #a10303;
+    border: 1px solid #ad0000;
+    border-radius: 1px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+        }
+
+        .browse-button:hover {
+         background-color: #b3000057;
+         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* бот */
+.background_bot {
+    background: rgba(34, 34, 36, 1);
+    padding-bottom: 50px;
+    padding-top: 100px;
+}
+
+.bot_prior {
+    margin: auto;
+    max-width: 780px;
+    /* height: 300px; */
+    text-align: center;
+    display: flex;
+    gap: 20px;
+
+}
+
+.pror_3stick {
+    margin: auto;
+    width: 360px;
+    gap: 20px;
+
+
+}
+
+.bot_title {
+    margin-top: 30px;
+    padding-bottom: 20px;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.bot_under_title {
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+
+}
+
+
+.background {
+    background: linear-gradient( rgba(170, 170, 170, 0.5), rgba(255, 255, 255, 0.808) ), url(../img/bot/4.2.png);
+    /* background-image: url(../img/bot/4.2.png) ; */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+
+    justify-content: space-around;
+    font-family: Arial, sans-serif;
+    padding: 50px 50px 50px 50px;
+
+
+}
+
+.komment {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    padding-bottom: 50px;
+
+}
+
+.p_bot {
+    margin:  auto;
+    padding-top: 20px;
+    max-width:300px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.komment img {
+    display: block;
+    margin:  auto;
+    border-radius: 50%;
+    max-width: 100px;
+}
+
+.subscribe {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+
+}
+.email{
+    position: relative;
+   
+
+}
+.subscribe_input{
+    border: none;
+    max-width: 250px;
+    height: 30px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius:10px ;
+}
+
+.subscribe_button{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius:10px ;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fc7f7f;
+    color: white;
+    /* letter-spacing: 2px; */
+    cursor: pointer;
+
+}
+img {
+    max-width: 100%; 
+    height: auto;
+}
+.acception{
+    font-size: 25px;
+}
+.subscribe_button:hover{
+    transition: .3s;
+    background-color: #ac5b5b;
+}
+
+
+.messenger {
+    padding: 30px 20px 30px 20px;
+    background: black;
+    color: white;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+.text_messenger{
+    padding-top: 10px;
+}
+
+svg {
+    padding: 10px;
+    background: white;
+    transition: background-color 0.3s ease;
+}
+
+svg:hover{
+    background-color: rgba(241, 109, 127, 1);
+
+}
+
+
+
+
+
+
+
+ .center{
+    padding-left: calc(50% - 512px);
+    padding-right: calc(50% - 512px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        @media (max-width:1024px) {
+            .center{
+               padding-left: calc(50% - 376px);
+               padding-right: calc(50% - 376px);
+               } 
+           }
+/* планшет */
+                    @media (max-width:768px){
+                      
+                        .center{
+                           
+                                padding-left: calc(50% - 275px);
+                                padding-right: calc(50% - 275px);
+                           
+                        }
+                       .header{
+                        padding-top: 0px;
+                       }
+                       .Title {
+                        border-left: 10px solid #fc7f7f;
+                       }
+                       .header {
+                        max-height: 368px;
+                       }
+                       .image_man{
+                        display: flex;
+                        justify-content: center;
+
+                       }
+                        .promo-container {
+                            padding-top: 50px;
+                        }
+                        .bot_prior{
+                            flex-direction: column;}
+
+                            .background {
+                                display: grid;
+                              }
+                        
+                    }
+
+                   
+                  
+                
+
+                @media(max-width:557px) {
+                    .center{
+                        padding-left: calc(50% - 150px);
+                        padding-right: calc(50% - 150px);
+                    }
+                    .image_man {
+                        display: none;   }
+                    .header{
+                       height: 360px;
+                      
+                    }
+                    .promo-container{
+                        display: flex;
+                        flex-direction: column;
+                        height: auto;
+                    }
+                    .section{
+                        height: 200px;
+                    }
+                    .accessories{
+                        height: 111px;
+                    }
+                    .tit_tel{
+                        font-size: 40px;
+                    }
+                    .tit_tel2{
+                        font-family: Arial, sans-serif;
+                        font-size: 1.3em;
+                        
+                    }
+                    .acception{
+                        font-size: 1.1em;
+                    }
+                    .tel_hide{
+                        display: none;
+                    }
+                      .meny_top{
+                        justify-content: space-between;
+                      }  
+                      .pror_3stick{
+                        width: auto;
+                      }
+                      .background {
+                        display: grid;
+                      }
+                      .subscribe_under_title{
+                        font-size: 15px;
+                      }
+                      .messenger{ 
+                    flex-direction: column-reverse;
+                    margin: auto;
+                      }
+                      .ico {
+                        display: flex;
+                        justify-content: center;
+                      }
+                      .text_messenger{
+                        display: flex;
+                        justify-content: center;
+                      }
+                }
+            
+
+.tel_hide{
+    position: relative;
+}
+.num_sale::after {
+    position: absolute;
+    content: '5';
+    background: rgba(241, 109, 127, 1);
+    border-radius: 50%;
+    height: 20x;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top:-5px;
+    right: -10px;
+    color: white;
+}
