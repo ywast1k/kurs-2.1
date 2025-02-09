@@ -23,7 +23,7 @@ data.forEach(element => {
     svgButton.classList.add('svgButton');
     svgButton.alt = 'svg';
     svgButton.src = './svg/kassa.svg'
-    svgButton.src = '../svg/kassa.svg'
+    
 
     const itemImg = document.createElement('img');
     itemImg.classList.add('img___sale');

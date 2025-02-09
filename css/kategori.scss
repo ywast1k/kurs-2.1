@@ -1,0 +1,144 @@
+$colorSelectSite: #F16D7F;
+
+summary {
+    list-style-type: none; /* Firefox */
+  }
+  
+  summary::-webkit-details-marker {
+    display: none; /* Chrome */
+  }
+
+.filter_sort {
+    left: 40px;
+    padding-top: 39px;
+    position: absolute;
+    box-sizing: border-box;
+    display: flex;
+
+}
+
+.filter {
+
+
+    position: relative;
+    padding: 13px 16px 16px;
+    width: 360px;
+
+    &_summary {
+        display: flex;
+        align-content: center;
+        gap: 11px;
+
+    }
+
+    &_heading {
+        color: 000;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+
+    }
+
+    &[open] {
+        background: white;
+        box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
+
+    }
+
+    &[open] path {
+        fill: $colorSelectSite;
+    }
+
+    &[open] .filter_heading {
+        color: $colorSelectSite;
+
+    }
+
+    &_item {
+        margin-top: 16px;
+
+    }
+    &_item[open] .filter_head{
+        color: $colorSelectSite;
+    }
+
+    &_head {
+        color: rgba(111, 110, 110, 1);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        padding: 8px 11px 11px 11px;
+        border-bottom: 1px solid rgba(235, 235, 235, 1);
+        border-left: 5px solid $colorSelectSite;
+    }
+
+    &_link {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: rgba(111, 110, 110, 1);
+        &:hover{
+            color: $colorSelectSite;
+        }
+
+    }
+    &_link-box{
+        padding:24px 16px;
+        display: flex;
+        flex-direction: column;
+        gap:11px;
+
+    }
+}
+
+.sort {
+    
+    position: relative;
+    padding: 12px 16px 16px;
+    width: auto;
+
+    &_heading{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+
+    }
+    &_summary{
+        display: flex;
+        align-items: center;
+        gap:10px;
+    }
+    &[open] .sort_box_size {
+        background: white;
+        box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
+
+    }
+
+    &[open] path {
+        fill: $colorSelectSite;
+    }
+    &[open] .sort_heading {
+        color: $colorSelectSite;
+
+    }
+    &_box_size{
+        left: 3px;
+        position: absolute;
+        align-items: center;
+        height: 103px;
+        
+       width: 73px ;
+    }
+    &_check{
+        margin: 18px;
+        align-items:center ;
+    }
+    &_label{
+        padding-left: 3px;
+    }
+}
+
+.size_block{
+    width: 105px;
+
+}

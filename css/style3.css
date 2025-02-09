@@ -255,10 +255,9 @@ ul {
 .cart-box {
   padding-top: 130px;
   padding-bottom: 130px;
-  max-width: 1140px;
+  max-width: 1024px;
   margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   grid-template-rows: auto auto;
   grid-template-columns: repeat(3, 1fr);
   /* Три колонки равной ширины */
@@ -269,11 +268,12 @@ ul {
 }
 
 .bodyContent {
+  z-index: -1;
   display: flex;
   align-content: space-between;
   flex-wrap: wrap;
   overflow: hidden;
-  width: 250px;
+  width: 300px;
   position: relative;
   /* Добавлено для позиционирования кнопки */
 }
@@ -413,7 +413,7 @@ ul {
 /* Стили для кнопки */
 .button {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
@@ -428,6 +428,40 @@ ul {
 
 .bodyContent:hover .button {
   display: block;
+}
+
+.background_bot {
+  background: rgb(34, 34, 36);
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.bot_prior {
+  margin: auto;
+  max-width: 780px;
+  /* height: 300px; */
+  text-align: center;
+  display: flex;
+  gap: 20px;
+}
+
+.pror_3stick {
+  margin: auto;
+  width: 360px;
+  gap: 20px;
+}
+
+.bot_title {
+  margin-top: 30px;
+  padding-bottom: 20px;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.bot_under_title {
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 10px;
 }
 
 .background {
@@ -519,6 +553,6 @@ ul {
   transition: background-color 0.3s ease;
 }
 
-svg:hover {
+.ico svg:hover {
   background-color: rgb(241, 109, 127);
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style3.css.map */
