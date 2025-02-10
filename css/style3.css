@@ -254,7 +254,7 @@ ul {
 
 .cart-box {
   padding-top: 130px;
-  padding-bottom: 130px;
+  padding-bottom: 70px;
   max-width: 1024px;
   margin: 0 auto;
   display: grid;
@@ -268,7 +268,6 @@ ul {
 }
 
 .bodyContent {
-  z-index: -1;
   display: flex;
   align-content: space-between;
   flex-wrap: wrap;
@@ -288,6 +287,7 @@ ul {
 }
 
 .item__content {
+  width: 360px;
   padding: 10px;
   background-color: #F8F8F8;
   margin-top: -3px;
@@ -308,11 +308,11 @@ ul {
 }
 
 .add-cart {
-  padding: 64px;
+  display: grid;
+  gap: 50px;
 }
 
 .item {
-  padding-top: 2px;
   height: 360px;
   width: 650px;
   box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
@@ -346,14 +346,11 @@ ul {
 }
 
 .imgPay {
-  max-width: 100%;
+  overflow: hidden;
+  margin: 0px auto;
   max-height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-  -o-object-position: center;
-     object-position: center;
-  width: 1200px;
-  margin: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .item_content {
@@ -402,6 +399,7 @@ ul {
 }
 
 .buttonRem {
+  position: relative;
   width: 44px;
   height: 44px;
   background-color: white;
@@ -434,6 +432,7 @@ ul {
   background: rgb(34, 34, 36);
   padding-bottom: 50px;
   padding-top: 50px;
+  margin-top: 50px;
 }
 
 .bot_prior {

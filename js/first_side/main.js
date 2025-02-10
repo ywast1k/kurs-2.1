@@ -61,7 +61,7 @@ data.forEach(element => {
             color: element.color,
             size: element.size
         });
-        displayCartItems();
+        // displayCartItems();
     });
     
     cartBox.appendChild(bodyEl);

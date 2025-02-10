@@ -1,0 +1,98 @@
+.top-heading {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #F8F3F4;
+  display: flex;
+}
+.top-heading_shop {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28.8px;
+  color: #F16D7F;
+  display: flex;
+}
+
+.shop_block {
+  padding-left: 130px;
+  display: flex;
+  margin-top: 40px;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.shop_block_price_insert {
+  padding-bottom: 60px;
+  display: grid;
+  gap: 20px;
+}
+.shop_block_price_insert_text {
+  padding-top: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+.shop_block_price_insert_text_input {
+  border: 1px solid gray;
+  height: 45px;
+  width: 360px;
+}
+.shop_block_price_insert_button {
+  background: white;
+  border: 1px solid gray;
+  width: 100px;
+  height: 35px;
+}
+.shop_block_buy {
+  padding: 35px;
+  display: grid;
+  justify-items: end;
+  background-color: rgb(245, 243, 243);
+  width: 290px;
+  height: 150px;
+}
+.shop_block_buy_total {
+  margin-right: 40px;
+  font-size: 12px;
+}
+.shop_block_buy_grand {
+  margin-right: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+.shop_block_buy_button {
+  color: white;
+  margin: auto;
+  height: 50px;
+  width: 275px;
+  background: #F16D7F;
+  border: none;
+  margin-right: 50px;
+}
+
+.shop_block_buy hr {
+  width: 275px;
+  margin-right: auto;
+  border: none;
+  border-top: 1px solid rgb(226, 226, 226);
+}
+
+.korrekt_grid {
+  display: grid;
+}
+
+.buttons {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.buttons_klick {
+  background: white;
+  width: 250px;
+  gap: 120px;
+  height: 50px;
+  border: 1px solid gray;
+  transition: 0.3s;
+}
+.buttons_klick:hover {
+  background: #F16D7F;
+}/*# sourceMappingURL=shop_side.css.map */

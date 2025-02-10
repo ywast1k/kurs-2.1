@@ -26,8 +26,8 @@ function displayCartItems() {
         const buyEl = document.createElement('div');
         buyEl.classList.add('item');
 
-        // const capacity__img = document.createElement('div');
-        // capacity__img.classList.add('capacity__img');
+        const capacity__img = document.createElement('div');
+        capacity__img.classList.add('capacity__img');
 
         const itemImg = document.createElement('img');
         itemImg.classList.add('imgPay');
@@ -81,7 +81,7 @@ function displayCartItems() {
         
         buyEl.appendChild(itemImg);
 
-        // itemImg.appendChild(capacity__img);
+       itemImg.appendChild(capacity__img);
         buyEl.appendChild(itemContentBuy);
         buyEl.appendChild(buttonRem);
         itemContentBuy.appendChild(itemBuyHead);
