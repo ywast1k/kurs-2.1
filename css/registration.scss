@@ -1,0 +1,74 @@
+$colorSelectSite: #F16D7F;
+
+.top-heading {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #F8F3F4;
+    display: flex;
+
+
+
+    &_shop {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 28.8px;
+        color: $colorSelectSite;
+        display: flex;
+
+    }
+}
+
+.reg{
+    vertical-align: top;
+    font-family: Calibri;
+    display: flex;
+
+    &_form{
+        gap: 40px;
+        &_firstform{
+         padding-top: 40px;
+
+
+        }
+        &_gender{
+            padding-top: 40px;
+        }
+        &_secondform{
+            padding-top: 40px;
+        }
+
+    }
+
+}
+.input_text{
+    height: 45px;
+    width: 360px;
+    margin: 20px auto;
+    padding-left: 10px;
+}
+.butt_send{
+    font-family: Calibri;
+    // font-style: italic;
+    width: 150px;
+    height: 50px;
+    margin: 20px auto;
+    background: $colorSelectSite;
+    border: none;
+    color: white;
+    transition: 0.3s;
+}
+.butt_send:hover{
+    background: #a33947;
+}
+.radio{
+    margin: auto 5px;
+}
+
+.inform{
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 100px;
+
+}
